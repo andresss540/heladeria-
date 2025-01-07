@@ -1,0 +1,118 @@
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas de hasta 768px */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("/photos/adrien-olichon-RCAhiGJsUUE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; /* Keep background fixed while scrolling */
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(167, 80, 80, 0); /* Semi-transparent background */
+  padding: 20px;
+  backdrop-filter: blur(5px); /* Add blur effect */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #b87333;
+  padding: 40px 0;
+  background-color: rgba(38, 38, 38, 0); /* Semi-transparent background */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  background-color: rgba(180, 26, 57, 0.6);
+  border-radius: 10px;
+}
+
+nav ul li {
+  padding: 0 15px;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 1.5em;
+  transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+nav a:hover {
+  color: #b87333;
+  transform: scale(1.1); /* Slightly scale on hover */
+}
+
+/* Main Content */
+#productos-destacados {
+  padding: 20px;
+}
+
+#productos-destacados h2 {
+  padding: 40px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor padre (si no tienes uno, añádelo en el HTML) */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Tu sección */
+section {
+  display: flex;
+  text-align: center;
+  width: 600px;
+  height: 430px;
+  margin: 0 auto; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+section img {
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  width: 0%; 
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 300px; 
+  filter: contrast(120%);
+}

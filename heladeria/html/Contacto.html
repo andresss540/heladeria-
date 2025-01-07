@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Heladería  </title>
+    
+    <!-- Preload and optimize resource loading -->
+    <link rel="preload" href="/css/stylecontacto.css" as="style">
+    <link rel="stylesheet" href="/css/stylecontacto.css">
+    
+    <!-- Improve SEO and accessibility -->
+    <meta name="description" content="Página de contacto de Heladería   - Contáctanos para cualquier consulta">
+    <meta name="keywords" content="heladería, contacto, mensaje, servicio al cliente">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contacto</h1>
+        </div>
+    </header>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/html/Compras.html">Compras</a></li>
+            <li><a href="/html/Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="formulario" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Envíanos un mensaje</h2>
+            
+            <form action="#" method="post" aria-label="Formulario de contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        placeholder="Tu nombre completo" 
+                        required 
+                        aria-required="true"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo" 
+                        placeholder="tucorreo@ejemplo.com" 
+                        required 
+                        aria-required="true"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input 
+                        type="text" 
+                        id="asunto" 
+                        name="asunto" 
+                        placeholder="Motivo de tu mensaje" 
+                        required 
+                        aria-required="true"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        placeholder="Escribe tu mensaje aquí" 
+                        required 
+                        aria-required="true"
+                        rows="5"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+
+            <aside class="contact-info" aria-labelledby="contact-info-heading">
+                <h3 id="contact-info-heading">Comunícate Con Nosotros</h3>
+                <ul>
+                    <li>
+                        <span aria-label="Teléfono">📞</span> 
+                        <a href="tel:+573175427148">+57 3175427148</a>
+                    </li>
+                    <li>
+                        <span aria-label="Correo electrónico">✉️</span> 
+                        <a href="mailto:heladosjs@gmail.com">heladosjs@gmail.com</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>

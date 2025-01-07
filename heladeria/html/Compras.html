@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladería - Compras</title>
+    <link rel="stylesheet" href="/css/stylecompras.css">
+    
+</head>
+<body> 
+    <header>
+        <div class="container">
+            <h1>Nuestra Tienda de Helados</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/html/Contacto.html">Contáctenos</a></li>
+            <li><a href="/html/Login.html">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <main class="container contenedor">
+        <section class="contenedor-items" aria-label="Catálogo de Helados">
+            <div class="item">
+                <span class="titulo-item">Helado de Chocolate Litro</span>
+                <img src="/photos/chocolate.jpg" alt="Helado de Chocolate" class="img-item">
+                <span class="precio-item">$ 24.400</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helados Fresa Litro</span>
+                <img src="/photos/fresa.jpg" alt="Helado de Fresa" class="img-item">
+                <span class="precio-item">$ 13.650</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado De Frutos Rojos Litro</span>
+                <img src="/photos/frutos.jpg" alt="Helado de Frutos Rojos" class="img-item">
+                <span class="precio-item">$ 36.650</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado De Vainilla Litro</span>
+                <img src="/photos/vainilla.jpg" alt="Helado de Vainilla" class="img-item">
+                <span class="precio-item">$ 36.950</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado Oreo Litro</span>
+                <img src="/photos/oreo.jpeg" alt="Helado Oreo" class="img-item">
+                <span class="precio-item">$ 41.100</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado de Arequipe Litro</span>
+                <img src="/photos/arequipe.jpeg" alt="Helado de Arequipe" class="img-item">
+                <span class="precio-item">$ 39.150</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado de Vainilla Fresa Litro</span>
+                <img src="/photos/vinilla fresa.jpg" alt="Helado de Vainilla y Fresa" class="img-item">
+                <span class="precio-item">$ 33.850</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado Nucita Litro</span>
+                <img src="/photos/nucita.jpeg" alt="Helado Nucita" class="img-item">
+                <span class="precio-item">$ 15.950</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Helado de Arequipe Con Mora</span>
+                <img src="/photos/arequipe con mora.jpeg" alt="Helado de Arequipe con Mora" class="img-item">
+                <span class="precio-item">$ 39.150</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </section>
+
+        <aside class="carrito" id="carrito" aria-label="Carrito de compras">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- Contenido del carrito -->
+            </div>
+
+            <div class="carrito-total">
+                <div class="carrito-item">
+                    <strong>Total a Pagar</strong>
+                    <span class="carrito-precio-total">$0</span>
+                </div>
+                <button class="btn-pagar" aria-label="Proceder al pago">
+                    Pagar <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                </button>
+            </div>
+        </aside>
+    </main>
+
+    <script src="/js/compras.js"></script>
+</body>
+</html>
